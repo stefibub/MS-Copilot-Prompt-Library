@@ -31,7 +31,7 @@ This repository exists to:
 - Provide **reusable prompt patterns**, not one‑off examples
 - Support **Copilot Community Calls**, workshops, and enablement sessions
 
-All prompts in this library are:
+All prompts in this library are: <br>
 ✅ Enterprise‑safe  
 ✅ Copy‑paste ready  
 ✅ Grounded in realistic business scenarios  
