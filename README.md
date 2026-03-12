@@ -3,7 +3,7 @@
 <!-- ===================================================== -->
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/stefibub/MS-Copilot-Prompt-Library/main/Assets/Copilot_Banner.png" alt="Microsoft Copilot Community" width="100%" />
+  <img src="https://raw.githubusercontent.com/stefibub/MS-Copilot-Prompt-Library/main/Assets/Copilot_Banner_Crop.png" alt="Microsoft Copilot Community" width="100%" />
 </p>
 
 <h1 align="center">Microsoft Copilot Prompt Library</h1>
