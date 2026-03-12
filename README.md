@@ -49,6 +49,42 @@ All prompts in this library are: <br>
 > 💡 Tip: Many prompts are designed to work best when Copilot already has access to relevant files, emails, meetings, or SharePoint content.
 
 ---
+## 🐞 Reporting Issues
+
+The [Issues](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues) section is used to track problems or improvements related to the prompt library.
+
+**Use Issues when you want to:**
+- report a prompt that does not work as expected
+- suggest improvements to an existing prompt
+- flag unclear, incorrect, or missing documentation
+
+**To submit an issue:**
+1. Go to the [Issues](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues) tab
+2. Click **New issue**
+3. Select the template that best matches your case
+4. Fill in the requested information and provide as much context as possible
+
+Using the templates helps maintainers review and address issues more efficiently.
+
+---------
+## 💬 Discussions
+
+The [Discussions](https://github.com/stefibub/MS-Copilot-Prompt-Library/discussions) section is the place for open conversations with the community.
+
+**Use Discussions when you want to:**
+- ask questions about prompts or Copilot behavior
+- share prompt ideas or experiments
+- discuss prompt engineering techniques
+- showcase how you are using prompts in real workflows
+
+**To start a discussion:**
+1. Go to the [Discussions](https://github.com/stefibub/MS-Copilot-Prompt-Library/discussions) tab
+2. Click **New discussion**
+3. Choose the most appropriate category
+4. Add your question, idea, or topic
+
+Discussions help the community exchange knowledge and explore new prompt use cases.
+---
 
 ## 🗂️ Repository Structure
 
