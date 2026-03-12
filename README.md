@@ -35,7 +35,6 @@ All prompts in this library are: <br>
 ✅ Enterprise‑safe  
 ✅ Copy‑paste ready  
 ✅ Grounded in realistic business scenarios  
-✅ Written for Microsoft 365 Copilot (Word, PowerPoint, Excel, Outlook, Teams, and Agents)
 
 ---
 
@@ -84,6 +83,8 @@ The [Discussions](https://github.com/stefibub/MS-Copilot-Prompt-Library/discussi
 4. Add your question, idea, or topic
 
 Discussions help the community exchange knowledge and explore new prompt use cases.
+
+
 ---
 
 ## 🗂️ Repository Structure
