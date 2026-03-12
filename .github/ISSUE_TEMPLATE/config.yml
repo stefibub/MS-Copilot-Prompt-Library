@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How to use the Issues section
+    url: https://github.com/stefibub/MS-Copilot-Prompt-Library/issues
+    about: Use the Issues section to report a prompt bug, suggest an improvement to an existing prompt, or flag a documentation problem. To submit an issue, click 'New issue', choose the template that best matches your case, and complete the requested information as clearly as possible. Include the prompt name or link, a short description of the problem or suggestion, and any relevant context such as where you ran it, what happened, and what you expected. Use Discussions instead for questions, ideas, prompt experiments, or general conversation.
+  - name: When to use Discussions
+    url: https://github.com/stefibub/MS-Copilot-Prompt-Library/discussions
+    about: Use Discussions to ask questions, share prompt ideas, discuss best practices, or start a conversation with the community.
