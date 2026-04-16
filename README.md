@@ -50,17 +50,13 @@ All prompts in this library are: <br>
 ---
 
 ## 🚀 Submit a Copilot Prompt
-
-Have a useful Copilot prompt to share?  
-Submit it for review and possible inclusion in the prompt library.
-
 <div align="center">
   <a href="https://github.com/stefibub/MS-Copilot-Prompt-Library/issues/new?template=submit-prompt.md">
     <img src="Assets/SubmitPrompt-removebg-preview.png" width="320" alt="Submit your prompt" />
   </a>
 </div>
-
-      
+Have a useful Copilot prompt to share?  
+Submit it for review and possible inclusion in the prompt library.
 ---
 ## 🐞 Reporting Issues
 
