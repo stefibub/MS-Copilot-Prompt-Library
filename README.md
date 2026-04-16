@@ -59,6 +59,7 @@ Submit it for review and possible inclusion in the prompt library.
     <img src="https://img.shields.io/badge/Submit%20your%20prompt-0078D4?style=for-the-badge" />
   </a>
 </p>
+
 ---
 ## 🐞 Reporting Issues
 
