@@ -48,6 +48,13 @@ All prompts in this library are: <br>
 > 💡 Tip: Many prompts are designed to work best when Copilot already has access to relevant files, emails, meetings, or SharePoint content.
 
 ---
+
+## 🚀 Submit a Copilot Prompt
+
+Have a useful Copilot prompt to share?  
+Submit it for review and possible inclusion in the prompt library.
+# 🚀 [Submit a Copilot Prompt]([https://github.com/<ORG>/<REPO>/issues/new?template=submit-prompt.md](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues))
+---
 ## 🐞 Reporting Issues
 
 The [Issues](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues) section is used to track problems or improvements related to the prompt library.
