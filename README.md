@@ -51,8 +51,8 @@ All prompts in this library are: <br>
 
 ## 🚀 Submit a Copilot Prompt
 
-Have a useful Copilot prompt to share?  
-Submit it for review and possible inclusion in the prompt library.
+Have a useful Copilot prompt to share?  **Submit it for review and possible inclusion in the prompt library.**
+👇 Click the button below to fill in a short template — submissions are reviewed before publishing.
 
 <p align="center">
   <a href="https://github.com/stefibub/MS-Copilot-Prompt-Library/issues/new?template=submit-prompt.md">
