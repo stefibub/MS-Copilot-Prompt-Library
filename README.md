@@ -52,7 +52,7 @@ All prompts in this library are: <br>
 ## 🚀 Submit a Copilot Prompt
 <p align="center">
   <a href="https://github.com/stefibub/MS-Copilot-Prompt-Library/issues/new?template=submit-prompt.md">
-    <img src="https://img.shields.io/badge/🚀%20Submit%20Your%20Prompt-0078D4?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Submit%20your%20prompt-0078D4?style=flat-square" />
   </a>
 </p>
 Have a useful Copilot prompt to share?  
