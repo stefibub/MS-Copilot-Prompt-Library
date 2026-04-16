@@ -56,7 +56,7 @@ Submit it for review and possible inclusion in the prompt library.
 
 <p align="center">
   <a href="https://github.com/stefibub/MS-Copilot-Prompt-Library/issues/new?template=submit-prompt.md">
-    <img src="Assets/SubmitPrompt.png" width="420" alt="Submit your prompt" />
+    <img src="assets/SubmitPrompt.png" width="420" style="margin-top:-40px;margin-bottom:-40px;">
   </a>
 </p>
       
