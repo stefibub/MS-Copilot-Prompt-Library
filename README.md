@@ -55,8 +55,8 @@ Have a useful Copilot prompt to share?
 Submit it for review and possible inclusion in the prompt library.
 
 <p align="center">
-  [https://github.com/<ORG>/<REPO>/issues/new?template=submit-prompt.md](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues)
-    assets/SubmitPrompt.png
+  <a href="https://github.com/stefibub/MS-Copilot-Prompt-Library/issues/new?template=submit-prompt.md">
+    <img src="assets/SubmitPrompt.png" alt="Submit your prompt" />
   </a>
 </p>
       
