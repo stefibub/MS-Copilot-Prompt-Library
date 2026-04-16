@@ -54,11 +54,11 @@ All prompts in this library are: <br>
 Have a useful Copilot prompt to share?  
 Submit it for review and possible inclusion in the prompt library.
 
-<p align="center">
+<div align="center">
   <a href="https://github.com/stefibub/MS-Copilot-Prompt-Library/issues/new?template=submit-prompt.md">
-    <img src="Assets/SubmitPrompt.png" width="420" style="margin-top:-40px;margin-bottom:-40px;">
+    img src="Assets/SubmitPrompt.png" width="320" alt="Submit your prompt">
   </a>
-</p>
+</div>
       
 ---
 ## 🐞 Reporting Issues
