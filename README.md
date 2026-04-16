@@ -53,7 +53,13 @@ All prompts in this library are: <br>
 
 Have a useful Copilot prompt to share?  
 Submit it for review and possible inclusion in the prompt library.
-# 🚀 [Submit a Copilot Prompt]([https://github.com/<ORG>/<REPO>/issues/new?template=submit-prompt.md](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues))
+
+<p align="center">
+  <a href="https://github.com/<ORG>/<REPO>/issues/new?template=submit-prompt.md">
+    <img
+      src="https://img.shields.io/badge/🚀%20Submit%E5?style=for-the-badge&logo=github&logoColor=white
+  </a>
+</p>
 ---
 ## 🐞 Reporting Issues
 
