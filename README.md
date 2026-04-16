@@ -60,6 +60,7 @@ Submit it for review and possible inclusion in the prompt library.
       src="https://img.shields.io/badge/🚀%20Submit%E5?style=for-the-badge&logo=github&logoColor=white
   </a>
 </p>
+      
 ---
 ## 🐞 Reporting Issues
 
