@@ -1,125 +1,16 @@
-<!-- ===================================================== -->
-<!-- Microsoft Copilot Community Prompt Library README     -->
-<!-- ===================================================== -->
+# React + Vite
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/stefibub/MS-Copilot-Prompt-Library/main/Assets/Final_Copilot_Banner_Crop.png" alt="Microsoft Copilot Community" width="100%" />
-</p>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<h1 align="center">Microsoft Copilot Prompt Library</h1>
+Currently, two official plugins are available:
 
-<p align="center">
-  <strong>A community‑driven collection of high‑quality prompts for Microsoft 365 Copilot, organised by department, role, and business scenario.</strong>
-</p>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Microsoft-Copilot-blue" />
-  <img src="https://img.shields.io/badge/Community-Driven-green" />
-  <img src="https://img.shields.io/badge/Public-Repo-orange" />
-  <img src="https://img.shields.io/badge/Prompt--Engineering-Best%20Practices-purple" />
-</p>
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Why This Repository Exists
+## Expanding the ESLint configuration
 
-Microsoft Copilot is powerful — but **prompt quality determines outcome quality**.
-
-This repository exists to:
-- Share **battle‑tested, demo‑ready, and real‑world prompts**
-- Help teams **adopt Copilot faster** across business functions
-- Provide **reusable prompt patterns**, not one‑off examples
-- Support **Copilot Community Calls**, workshops, and enablement sessions
-
-All prompts in this library are: <br>
-✅ Enterprise‑safe  
-✅ Copy‑paste ready  
-✅ Grounded in realistic business scenarios  
-
----
-
-## How to Use This Library
-
-1. Navigate to a **department folder**
-2. Select a **use case**
-3. Copy the prompt directly into **Microsoft 365 Copilot**
-4. Adjust tone, audience, or constraints if needed
-
-> 💡 Tip: Many prompts are designed to work best when Copilot already has access to relevant files, emails, meetings, or SharePoint content.
-
----
-
-## 🚀 Submit a Copilot Prompt
-
-Have a useful Copilot prompt to share?  **Submit it for review and possible inclusion in the prompt library.**
-
-👇 Click the button below to fill in a short template — submissions are reviewed before publishing. 👇
-
-<p align="center">
-  <a href="https://github.com/stefibub/MS-Copilot-Prompt-Library/issues/new?template=submit-prompt.md">
-    <img src="https://img.shields.io/badge/Submit%20your%20prompt-0078D4?style=for-the-badge" />
-  </a>
-</p>
-
----
-## 🐞 Reporting Issues
-
-The [Issues](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues) section is used to track problems or improvements related to the prompt library.
-
-**Use Issues when you want to:**
-- report a prompt that does not work as expected
-- suggest improvements to an existing prompt
-- flag unclear, incorrect, or missing documentation
-
-**To submit an issue:**
-1. Go to the [Issues](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues) tab
-2. Click **New issue**
-3. Select the template that best matches your case
-4. Fill in the requested information and provide as much context as possible
-
-Using the templates helps maintainers review and address issues more efficiently.
-
----------
-## 💬 Discussions
-
-The [Discussions](https://github.com/stefibub/MS-Copilot-Prompt-Library/discussions) section is the place for open conversations with the community.
-
-**Use Discussions when you want to:**
-- ask questions about prompts or Copilot behavior
-- share prompt ideas or experiments
-- discuss prompt engineering techniques
-- showcase how you are using prompts in real workflows
-
-**To start a discussion:**
-1. Go to the [Discussions](https://github.com/stefibub/MS-Copilot-Prompt-Library/discussions) tab
-2. Click **New discussion**
-3. Choose the most appropriate category
-4. Add your question, idea, or topic
-
-Discussions help the community exchange knowledge and explore new prompt use cases.
-
-
----
-
-## 🗂️ Repository Structure
-
-```text
-copilot-prompt-library/
-│
-├── 📁 Finance/
-│   ├── expense-analysis.md
-│   ├── budget-variance.md
-│   └── policy-compliance.md
-│
-├── 📁 HR/
-│   ├── onboarding.md
-│   ├── policy-summarisation.md
-│   └── performance-review-drafting.md
-
-├── 📁 Assets/
-│   ├── banners/
-│   ├── icons/
-│   └── diagrams/
-│
-└── README.md
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
