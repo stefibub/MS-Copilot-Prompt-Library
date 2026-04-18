@@ -22,15 +22,11 @@
 ---
 
 <p align="center">
-  <a href="https://stefibub.github.io/MS-Copilot-Prompt-Library/">
-    <img src="https://img.shields.io/badge/🌐%20Open%20Prompt%20Library-0078D4?style=for-the-badge&logoColor=white" alt="Open Prompt Library" />
-  </a>
-</p>
-
-<p align="center">
   <strong>🌐 <a href="https://stefibub.github.io/MS-Copilot-Prompt-Library/">Visit the Live Prompt Library →</a></strong>
 </p>
+
 ---
+
 ## Why This Repository Exists
 
 Microsoft Copilot is powerful — but **prompt quality determines outcome quality**.
