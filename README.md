@@ -105,10 +105,6 @@ The [Discussions](https://github.com/stefibub/MS-Copilot-Prompt-Library/discussi
 
 Discussions help the community exchange knowledge and explore new prompt use cases.
 
-
----
-
-
 ---
 
 ## 🙌 Contributors
