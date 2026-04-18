@@ -61,13 +61,12 @@ All prompts in this library are: <br>
 
 Have a useful Copilot prompt to share?  **Submit it for review and it may be featured in the prompt library.**
 
-👇 Click the button below to fill in a short template — submissions are reviewed before publishing. 👇
+👇 Click the Link below to fill in a short template — submissions are reviewed before publishing. 👇
 
 <p align="center">
-  <a href="https://github.com/stefibub/MS-Copilot-Prompt-Library/issues/new?template=submit-prompt.md">
-    <img src="https://img.shields.io/badge/Submit%20your%20prompt-0078D4?style=for-the-badge" />
-  </a>
+  <strong>🌐 <a href="https://github.com/stefibub/MS-Copilot-Prompt-Library/issues/new?template=submit-prompt.md"">Submit a Prompt →</a></strong>
 </p>
+
 
 ---
 ## 🐞 Reporting Issues
