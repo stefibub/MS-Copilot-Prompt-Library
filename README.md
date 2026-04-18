@@ -21,6 +21,16 @@
 
 ---
 
+<p align="center">
+  <a href="https://stefibub.github.io/MS-Copilot-Prompt-Library/">
+    <img src="https://img.shields.io/badge/🌐%20Open%20Prompt%20Library-0078D4?style=for-the-badge&logoColor=white" alt="Open Prompt Library" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>🌐 <a href="https://stefibub.github.io/MS-Copilot-Prompt-Library/">Visit the Live Prompt Library →</a></strong>
+</p>
+---
 ## Why This Repository Exists
 
 Microsoft Copilot is powerful — but **prompt quality determines outcome quality**.
@@ -40,10 +50,12 @@ All prompts in this library are: <br>
 
 ## How to Use This Library
 
-1. Navigate to a **department folder**
-2. Select a **use case**
-3. Copy the prompt directly into **Microsoft 365 Copilot**
-4. Adjust tone, audience, or constraints if needed
+1. Visit the **[Live Prompt Library](https://stefibub.github.io/MS-Copilot-Prompt-Library/)**
+2. Use the **search bar** to find prompts by keyword
+3. Filter by **department** using the dropdown
+4. Click any card to **view the full prompt**
+5. Hit **Copy Prompt** and paste directly into Microsoft 365 Copilot
+6. Adjust tone, audience, or constraints as needed
 
 > 💡 Tip: Many prompts are designed to work best when Copilot already has access to relevant files, emails, meetings, or SharePoint content.
 
@@ -51,7 +63,7 @@ All prompts in this library are: <br>
 
 ## 🚀 Submit a Copilot Prompt
 
-Have a useful Copilot prompt to share?  **Submit it for review and possible inclusion in the prompt library.**
+Have a useful Copilot prompt to share?  **Submit it for review and it may be featured in the prompt library.**
 
 👇 Click the button below to fill in a short template — submissions are reviewed before publishing. 👇
 
@@ -101,25 +113,12 @@ Discussions help the community exchange knowledge and explore new prompt use cas
 
 ---
 
-## 🗂️ Repository Structure
 
-```text
-copilot-prompt-library/
-│
-├── 📁 Finance/
-│   ├── expense-analysis.md
-│   ├── budget-variance.md
-│   └── policy-compliance.md
-│
-├── 📁 HR/
-│   ├── onboarding.md
-│   ├── policy-summarisation.md
-│   └── performance-review-drafting.md
+---
 
-├── 📁 Assets/
-│   ├── banners/
-│   ├── icons/
-│   └── diagrams/
-│
-└── README.md
-```
+## 🙌 Contributors
+
+This library is built and maintained by the **Microsoft Copilot Champion Community**.  
+Every prompt submission, issue report, and discussion makes it better for everyone.
+
+> Want to contribute? [Submit a prompt →](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues/new?template=submit-prompt.md)
