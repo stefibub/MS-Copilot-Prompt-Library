@@ -40,7 +40,7 @@ This repository exists to:
 All prompts in this library are: <br>
 ✅ Enterprise‑safe  
 ✅ Copy‑paste ready  
-✅ Grounded in realistic business scenarios  
+✅ Grounded in realistic business scenarios.  
 
 ---
 
