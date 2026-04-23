@@ -57,7 +57,7 @@ All prompts in this library are: <br>
 
 ---
 
-## 🚀 Submit a Copilot Prompt
+## Submit a Copilot Prompt
 
 Have a useful Copilot prompt to share?  **Submit it for review and it may be featured in the prompt library.**
 
@@ -69,7 +69,7 @@ Have a useful Copilot prompt to share?  **Submit it for review and it may be fea
 
 
 ---
-## 🐞 Reporting Issues
+## Reporting Issues
 
 The [Issues](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues) section is used to track problems or improvements related to the prompt library.
 
@@ -87,7 +87,7 @@ The [Issues](https://github.com/stefibub/MS-Copilot-Prompt-Library/issues) secti
 Using the templates helps maintainers review and address issues more efficiently.
 
 ---------
-## 💬 Discussions
+## Discussions
 
 The [Discussions](https://github.com/stefibub/MS-Copilot-Prompt-Library/discussions) section is the place for open conversations with the community.
 
@@ -107,7 +107,7 @@ Discussions help the community exchange knowledge and explore new prompt use cas
 
 ---
 
-## 🙌 Contributors
+## Contributors
 
 This library is built and maintained by the **Microsoft Copilot Champion Community**.  
 Every prompt submission, issue report, and discussion makes it better for everyone.
