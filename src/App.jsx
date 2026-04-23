@@ -10,7 +10,7 @@ const PROMPTS = [
     title: "Executive Meeting Summary",
     department: "Leadership",
     tags: ["meetings", "summary", "executive"],
-    description: "Summarise a meeting transcript into clear action items and decisions for senior stakeholders.",
+    description: "Summarise  /[meeting transcript] into clear action items and decisions for senior stakeholders.",
     prompt: `You are an executive assistant. Given the meeting transcript below, produce:
 1. A 3-sentence executive summary
 2. A bulleted list of decisions made
@@ -142,6 +142,243 @@ Role: [ROLE]
 Team: [TEAM]
 Start date: [DATE]`,
   },
+  { department: "Leadership",
+  tags: ["strategy", "planning", "roadmap", "metrics", "milestones"],
+  description: "Develop a structured 3-year strategic plan with priorities, objectives, metrics, and quarterly milestones.",
+  prompt: `Act as a strategic planning consultant. Help me develop a 3-year strategic plan for [organisation/department]. Include:
+- Vision statement
+- Strategic priorities
+- Key objectives
+- Success metrics
+- Potential obstacles
+- Quarterly milestones`,
+},
+{
+  id: 10,
+  title: "Board-Ready Initiative Pitch & ROI Narrative",
+  department: "Leadership",
+  tags: ["executive", "board", "influence", "roi", "storytelling"],
+  description: "Craft a clear, senior-stakeholder pitch that anticipates objections and makes a compelling ROI case.",
+  prompt: `Act as a communications strategist. I need to pitch [brief description of proposal/initiative] to my boss/board. Help me craft a clear, concise argument and presentation strategy that highlights the benefits, addresses potential objections, and demonstrates ROI.`,
+},
+{
+  id: 11,
+  title: "Decision Tree Analysis for Strategic Initiatives",
+  department: "Leadership",
+  tags: ["decision-making", "risk", "scenario", "probability", "governance"],
+  description: "Map a decision tree with key decision points, outcomes, probability estimates, and risk mitigations.",
+  prompt: `Act as a strategic advisor. I'm considering [strategic initiative]. Walk me through a decision tree analysis that identifies key decision points, potential outcomes, probability estimates, and risk mitigation strategies for each branch.`,
+},
+{
+  id: 12,
+  title: "Stakeholder Sentiment & Objection Handling (AI Ethics & Automation)",
+  department: "Leadership",
+  tags: ["stakeholders", "change-management", "ai-ethics", "comms", "risk"],
+  description: "Predict stakeholder reactions and generate pre-emptive responses, with emphasis on AI ethics and automation anxiety.",
+  prompt: `I am proposing [decision] to [stakeholders]. Use sentiment analysis frameworks to predict reactions across different organisational levels. Generate pre-emptive responses that address both rational and emotional objections, with specific attention to AI ethics concerns and automation anxiety factors.`,
+},
+{
+  id: 9,
+  title: "3-Year Strategic Plan Builder",
+  department: "Leadership",
+  tags: ["strategy", "planning", "roadmap", "metrics", "milestones"],
+  description: "Develop a structured 3-year strategic plan with priorities, objectives, metrics, and quarterly milestones.",
+  prompt: `Act as a strategic planning consultant. Help me develop a 3-year strategic plan for [organisation/department]. Include:
+- Vision statement
+- Strategic priorities
+- Key objectives
+- Success metrics
+- Potential obstacles
+- Quarterly milestones`,
+},
+{
+  id: 13,
+  title:"IT Helpdesk Ticket Clarifier",
+  department: "IT",
+  tags: ["support", "incident", "troubleshooting", "clarity", "it-helpdesk"],
+  description: "Turn a vague technical problem into a clear, complete issue description for IT support.",
+  prompt: `I am experiencing the following technical issue: [describe the problem]. Help me structure this into a clear, concise description suitable for IT support.
+
+Include:
+- What I was trying to do
+- What actually happened
+- Any error messages or symptoms
+- When the issue started
+- Whether it is blocking my work
+- Any steps I have already tried
+
+Do not attempt to fix the issue — focus only on clarity and completeness.`,
+},
+
+{
+  id: 14,
+  title: "Summarise Comms by Critical Term",
+  department: "Leadership",
+  tags: ["communication", "email", "teams", "monitoring", "summary"],
+  description: "Quickly surface all communications mentioning a critical term, with owners and deadlines in one table.",
+  prompt: `Summarise all emails and Teams chats that mention [CRITICAL TERM] from the past [24 HOURS]. Highlight the main issues raised, the proposed solutions and timing. Provide a table listing Source (Email/Chat), Sender, Key Point, Owner, and Deadline.`,
+},
+
+{
+  id: 15,
+  title: "Executive Time Audit",
+  department: "Leadership",
+  tags: ["time management", "productivity", "calendar", "strategy", "executive"],
+  description: "Analyse how executive time has been spent over 90 days and get actionable recommendations to optimise it.",
+  prompt: `Analyse my calendar, meeting metadata, mailbox emails, and Teams chats for the [LAST 90 DAYS]; summarise time allocation across key categories (Customers & Market, Strategy, People & Leadership, Operations & Risk, Governance & Stakeholders, Regulatory & Compliance, Investor Relations, Technology & Innovation, Personal Admin); provide trends, highlight top recurring meetings and communication patterns, and recommend 5 actionable changes to optimise executive time for the next quarter.`,
+},
+{
+  id: 16,
+  title: "ROI Forecast",
+  department: "Finance",
+  tags: ["ROI", "forecasting", "strategy", "decision-making", "financial analysis"],
+  description: "Generate a multi-horizon ROI analysis that captures both financial and second-order impacts of an initiative.",
+  prompt: `Generate an AI-enhanced ROI analysis for [situation] that incorporates both quantifiable metrics and second-order impacts across our digital ecosystem. Include predictive modelling for 6, 12, and 24-month horizons and suggest implementation pathways that leverage our existing tech stack.`,
+},
+
+
+{
+  id: 17,
+  title: "Stakeholder Objections",
+  department: "Leadership",
+  tags: ["stakeholders", "communication", "change management", "sentiment", "objections"],
+  description: "Predict stakeholder reactions to a proposal and generate pre-emptive responses to rational and emotional objections.",
+  prompt: `I am proposing [decision] to [stakeholders]. Use sentiment analysis frameworks to predict reactions across different organisational levels. Generate pre-emptive responses that address both rational and emotional objections, with specific attention to AI ethics concerns and automation anxiety factors.`,
+},
+{
+  id: 18,
+  title: "Multi-Framework Scan",
+  department: "Leadership",
+  tags: ["strategy", "SWOT", "Porter", "decision-making", "analysis"],
+  description: "Run a strategic decision through multiple frameworks and get a consolidated executive summary with ranked actions.",
+  prompt: `Analyse [decision/situation] using the following frameworks: Porter's Five Forces, SWOT analysis, and risk-opportunity matrix. Provide a consolidated executive summary with recommended action items ranked by impact and feasibility.`,
+},
+{
+  id: 19,
+  title: "Decision Tree",
+  department: "Leadership",
+  tags: ["decision-making", "risk", "strategy", "planning", "outcomes"],
+  description: "Walk through a structured decision tree for a high-stakes initiative, with probabilities and risk mitigations per branch.",
+  prompt: `Act as a strategic adviser. I'm considering [strategic initiative]. Walk me through a decision tree analysis that identifies key decision points, potential outcomes, probability estimates, and risk mitigation strategies for each branch.`,
+},
+
+{
+  id: 20,
+  title: "Difficult Conversation",
+  department: "Leadership",
+  tags: ["communication", "leadership", "empathy", "conflict", "people"],
+  description: "Get a structured framework for navigating a sensitive leadership conversation with empathy and clarity.",
+  prompt: `I need to have a difficult conversation with [person/team] about [sensitive topic]. Generate a conversation framework that includes opening statements, key points to address, questions to ask, and strategies for handling potential defensive reactions.`,
+},
+
+{
+  id: 21,
+  title: "Town Hall Message",
+  department: "Leadership",
+  tags: ["communication", "town hall", "leadership", "change", "storytelling"],
+  description: "Draft an authentic, story-driven town hall message that connects emotionally and ends with a clear call to action.",
+  prompt: `Draft a town hall message for [Topic/Initiative]. Structure it to: 1) Start with the end goal and why it matters 2) Acknowledge challenges, fears, and potential resistance 3) Present achievable steps and short-term benchmarks 4) Create an emotional connection through story and personal examples 5) End with a clear call to action and celebration of progress. Keep the message clear, concise, authentic, story-driven, and fact-based.`,
+},
+
+{
+  id: 22,
+  title: "3-Year Strategic Plan",
+  department: "Leadership",
+  tags: ["strategy", "planning", "vision", "milestones", "KPIs"],
+  description: "Develop a comprehensive 3-year strategic plan with vision, priorities, objectives, metrics, and quarterly milestones.",
+  prompt: `Act as a strategic planning consultant. Help me develop a 3-year strategic plan for [organisation/department]. Include: vision statement, strategic priorities, key objectives, success metrics, potential obstacles, and quarterly milestones.`,
+},
+
+{
+  id: 23,
+  title: "Balanced Scorecard",
+  department: "Finance",
+  tags: ["KPIs", "scorecard", "performance", "financial", "reporting"],
+  description: "Create a balanced scorecard across financial, customer, internal process, and learning perspectives with KPIs and measurement methodology.",
+  prompt: `Create a balanced scorecard for [organisation/department] covering: financial, customer, internal process, and learning/growth perspectives. Include 3–5 KPIs per perspective with targets and measurement methodology.`,
+},
+
+{
+  id: 24,
+  title: "Devil's Advocate Review",
+  department: "Leadership",
+  tags: ["strategy", "critical thinking", "risk", "planning", "challenge"],
+  description: "Get a critical challenge of a topic or initiative that exposes flaws, evaluates strengths and weaknesses, and offers improvements.",
+  prompt: `Act as a Devil's Advocate. Review [X topic or initiative] for the next fiscal year and ask critical questions to expose flaws. Then prepare a detailed report evaluating strengths, weaknesses, and offer recommendations to improve.`,
+},
+{
+  id: 25,
+  title: "Executive Coaching",
+  department: "Leadership",
+  tags: ["coaching", "leadership", "development", "challenges", "self-awareness"],
+  description: "Use Copilot as an executive coach to explore the dynamics behind a leadership challenge and develop strategies to address it.",
+  prompt: `Act as an executive coach. I'm struggling with [specific leadership challenge]. Help me understand the underlying dynamics, identify my contribution to the situation, and develop strategies to address it effectively.`,
+},
+{
+  id: 26,
+  title: "Article Synthesis",
+  department: "Leadership",
+  tags: ["research", "synthesis", "insights", "learning", "strategy"],
+  description: "Summarise the key findings of an article and get role-specific implications tied to your strategic priorities or current challenges.",
+  prompt: `Summarise the key findings and main arguments of the following article [paste article or link] in 3–5 bullet points. Then provide implications for my role as [your role] in [industry/context].`,
+},
+{
+  id: 27,
+  title: "30-Day Executive Habit Formation",
+  department: "Leadership",
+  tags: ["habits", "development", "leadership", "accountability", "behaviour change"],
+  description: "Design a 30-day habit programme to sustainably improve a specific executive capability through daily practice and weekly reflection.",
+  prompt: `Design a 30-day executive habit formation programme to improve my [target area: e.g., strategic thinking, delegation, communication]. Include daily practices, weekly reflections, and accountability mechanisms.`,
+},
+{
+  id: 28,
+  title: "Personal Board of Advisors",
+  department: "Leadership",
+  tags: ["advisory", "mentorship", "development", "relationships", "growth"],
+  description: "Build a personal board of advisors framework — identifying skill gaps, ideal advisor profiles, and how to structure relationships for maximum value.",
+  prompt: `Create a personal board of advisors framework. Help me identify: skill gaps where I need guidance, ideal advisor profiles, questions to ask potential advisors, and how to structure these relationships for maximum value.`,
+},
+{
+  id: 29,
+  title: "Crisis Response Framework",
+  department: "Leadership",
+  tags: ["crisis", "risk", "response", "communication", "planning"],
+  description: "Develop a structured crisis response covering immediate actions, stakeholder comms, team coordination, and longer-term recovery strategy.",
+  prompt: `We're facing [crisis situation]. Develop a crisis response framework including: immediate actions (first 24 hours), stakeholder communication plan, team coordination approach, and longer-term recovery strategy.`,
+},
+{
+  id: 30,
+  title: "Risk Assessment",
+  department: "Leadership",
+  tags: ["risk", "assessment", "mitigation", "planning", "compliance"],
+  description: "Identify and rate risks across strategic, operational, financial, reputational, and compliance categories with likelihood, impact, and mitigation strategies.",
+  prompt: `Conduct a risk assessment for [initiative/project]. Identify potential risks across categories: strategic, operational, financial, reputational, and compliance. For each risk, provide likelihood, impact, and mitigation strategies.`,
+},
+{
+  id: 31,
+  title: "Scenario Planning",
+  department: "Leadership",
+  tags: ["scenario planning", "risk", "strategy", "futures", "uncertainty"],
+  description: "Develop 3–4 plausible future scenarios based on key uncertainties and get tailored strategic responses for each.",
+  prompt: `Create a scenario planning exercise for [strategic decision]. Develop 3–4 plausible future scenarios based on key uncertainties. For each scenario, describe implications for our business and recommended strategic responses.`,
+},
+{
+  id: 32,
+  title: "Business Continuity Plan",
+  department: "Operations",
+  tags: ["continuity", "risk", "resilience", "operations", "planning"],
+  description: "Build a business continuity plan for a critical function covering dependencies, failure scenarios, backup procedures, and recovery time objectives.",
+  prompt: `Design a business continuity plan for [critical business function]. Include: key dependencies, failure scenarios, backup procedures, recovery time objectives, and testing methodology.`,
+},
+{
+  id: 33,
+  title: "Emerging Trend Impact Assessment",
+  department: "Leadership",
+  tags: ["trends", "risk", "strategy", "monitoring", "planning"],
+  description: "Analyse an emerging trend or threat, assess its business impact over a set timeframe, and get clear monitor/prepare/act recommendations.",
+  prompt: `Analyse [emerging trend/threat] and its potential impact on our business over [timeframe]. Provide: impact assessment, strategic implications, and recommended actions (monitor, prepare, or act now).`,
+},
+
 ];
 
 // Derive unique departments for the filter dropdown
@@ -156,6 +393,8 @@ const DEPT_COLOURS = {
   "Strategy":           { bg: "#F0FDFA", text: "#0F766E" },
   "Customer Success":   { bg: "#FEFCE8", text: "#A16207" },
   "Project Management": { bg: "#FFF1F2", text: "#BE123C" },
+  "IT":                 { bg: "#F1F5F9", text: "#334155" },
+
 };
 
 // Fallback for any department not in the map above
