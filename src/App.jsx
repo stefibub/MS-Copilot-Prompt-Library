@@ -399,6 +399,9 @@ const DEPT_COLOURS = {
 
 // Fallback for any department not in the map above
 const DEFAULT_DEPT_COLOUR = { bg: "#EEF5FC", text: "#0078D4" };
+// IDs of the three featured "Prompts of the Month" — swap these each month
+const FEATURED_IDS = [1, 3, 6];
+
 
 // ─────────────────────────────────────────────
 // STYLES — single <style> block injected once
@@ -621,6 +624,114 @@ const GLOBAL_STYLES = `
     .pl-modal { max-height: 95vh; border-radius: 12px 12px 0 0; align-self: flex-end; }
     .pl-overlay { padding: 0; align-items: flex-end; }
   }
+
+/* ── Featured Banner ── */
+.pl-featured-banner {
+  background: #0078D4;
+  border-radius: 12px;
+  padding: 28px 28px 24px;
+  margin-bottom: 32px;
+}
+.pl-featured-banner-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.pl-featured-banner-label {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  text-transform: none;
+  color: #fff;
+  line-height: 1.2;
+}
+.pl-featured-banner-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.70);
+}
+.pl-featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.pl-featured-card {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+  width: 100%;
+}
+.pl-featured-card:hover {
+  background: rgba(255,255,255,0.22);
+  border-color: rgba(255,255,255,0.55);
+  transform: translateY(-2px);
+}
+.pl-featured-card:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+.pl-featured-card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.3;
+}
+.pl-featured-card-dept {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-radius: 4px;
+  padding: 3px 8px;
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.pl-featured-card-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.55;
+  flex: 1;
+}
+.pl-featured-card-footer {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.pl-featured-tag {
+  font-size: 11px;
+  color: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.12);
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+.pl-star-icon {
+  color: #FFD700;
+  font-size: 18px;
+  line-height: 1;
+}
+@media (max-width: 900px) {
+  .pl-featured-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .pl-featured-grid { grid-template-columns: 1fr; }
+}
 `;
 
 // ─────────────────────────────────────────────
@@ -758,7 +869,10 @@ export default function App() {
         </div>
 
         {/* ── CARD GRID ── */}
-        <main>
+        <FeaturedBanner onOpen={openModal} />
+
+{/* ── CARD GRID ── */}
+<main>
           <div className="pl-grid">
             {filtered.length === 0 ? (
               <div className="pl-empty" role="status">
@@ -900,5 +1014,50 @@ function PromptModal({ prompt, copied, onCopy, onClose, closeButtonRef }) {
 
       </div>
     </div>
+  );
+}
+
+// ─────────────────────────────────────────────
+// FEATURED BANNER — Prompts of the Month
+// ─────────────────────────────────────────────
+function FeaturedBanner({ onOpen }) {
+  const featured = PROMPTS.filter((p) => FEATURED_IDS.includes(p.id));
+
+  return (
+    <div className="pl-featured-banner">
+      <div className="pl-featured-banner-header">
+        <p className="pl-featured-banner-label">Prompts of the Month</p>
+        <p className="pl-featured-banner-title">Community Favourites — this month's must-tries</p>
+      </div>
+      <div className="pl-featured-grid">
+        {featured.map((prompt) => (
+          <FeaturedCard key={prompt.id} prompt={prompt} onClick={onOpen} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────
+// FEATURED CARD — card styled for the blue banner
+// ─────────────────────────────────────────────
+function FeaturedCard({ prompt, onClick }) {
+  return (
+    <button
+      className="pl-featured-card"
+      onClick={() => onClick(prompt)}
+      aria-label={`View prompt: ${prompt.title}`}
+    >
+      <div className="pl-card-header">
+        <span className="pl-featured-card-title">{prompt.title}</span>
+        <span className="pl-featured-card-dept">{prompt.department}</span>
+      </div>
+      <p className="pl-featured-card-desc">{prompt.description}</p>
+      <div className="pl-featured-card-footer">
+        {prompt.tags.map((tag) => (
+          <span key={tag} className="pl-featured-tag">#{tag}</span>
+        ))}
+      </div>
+    </button>
   );
 }
