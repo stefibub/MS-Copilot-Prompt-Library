@@ -142,17 +142,6 @@ Role: [ROLE]
 Team: [TEAM]
 Start date: [DATE]`,
   },
-  { department: "Leadership",
-  tags: ["strategy", "planning", "roadmap", "metrics", "milestones"],
-  description: "Develop a structured 3-year strategic plan with priorities, objectives, metrics, and quarterly milestones.",
-  prompt: `Act as a strategic planning consultant. Help me develop a 3-year strategic plan for [organisation/department]. Include:
-- Vision statement
-- Strategic priorities
-- Key objectives
-- Success metrics
-- Potential obstacles
-- Quarterly milestones`,
-},
 {
   id: 10,
   title: "Board-Ready Initiative Pitch & ROI Narrative",
@@ -765,11 +754,12 @@ export default function App() {
     const q = search.toLowerCase().trim();
     return PROMPTS.filter((p) => {
       const matchesDept   = department === "All" || p.department === department;
-      const matchesSearch = !q ||
-        p.title.toLowerCase().includes(q) ||
-        p.description.toLowerCase().includes(q) ||
-        p.tags.some((t) => t.toLowerCase().includes(q));
-      return matchesDept && matchesSearch;
+      const matchesSearch =
+          !q ||
+          (p.title && p.title.toLowerCase().includes(q)) ||
+          (p.description && p.description.toLowerCase().includes(q)) ||
+          p.tags.some((t) => t.toLowerCase().includes(q));
+              return matchesDept && matchesSearch;
     });
   }, [search, department]);
 
